@@ -1,1 +1,257 @@
-sad
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Code_and_compose</title>
+
+    <link rel="stylesheet" href="styles.css" />
+
+    <!-- Bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.1/css/all.min.css" integrity="sha512-5Hs3dF2AEPkpNAR7UiOHba+lRSJNeM2ECkwxUIxC1Q/FLycGTbNapWXB4tP889k5T5Ju8fs4b1P5z/iB4nMfSQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    
+</head>
+<body>
+    
+   
+    <!-- NavBar Start -->
+    <div class="bg-meArea">
+        <div class="d-flex align-items-center justify-content-between navbar">
+            <img class="logo" src="/logo-white.svg fill.png" alt="white logo">
+            <div class="hamburger" id="hamburger">
+                <div class="bar"></div>
+                <div class="bar"></div>
+                <div class="bar"></div>
+            </div>
+            <div class="nav-items">
+                <ul class="nav-list">
+                    <li>Home</li>
+                    <li>Listings</li>
+                    <li>Members</li>
+                    <li>Blog</li>
+                    <li>Pages</li>
+                    <li>Contact</li>
+                </ul>
+            </div>
+            <div class="d-flex align-items-center right-navItems">
+                <div class="d-flex align-items-center gap-2">
+                    <i class="fa-solid fa-phone"></i>
+                    <span>+68 685 88 666</span>
+                </div>
+                <button class="">Add Property</button>
+            </div>
+        </div>
+    </div>
+    <!-- NavBar End -->
+
+
+    <!-- Why connect with US Start -->
+
+    <div class="text-center Why-connect">
+        <h1>Why You Should Work With Us</h1>
+        <p class="mb-5">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+        <div class="grid">
+            <div class="text-center">
+                <img src="/Vector.png" alt="icon">
+                <h4>Wide Range of Properties</h4>
+                <p>We offer expert legal help for all property items in Dubai</p>
+            </div>
+            <div class="text-center">
+                <img src="/Vector1.png" alt="icon">
+                <h4>Buy or Rent Homes</h4>
+                <p>We sell your home at the best market price and very quickly as well.</p>
+            </div>
+            <div class="text-center">
+                <img src="/Vector2.png" alt="icon">
+                <h4>Trusted by Thousands</h4>
+                <p>We offer you free consultancy to get a loan for your new home.</p>
+            </div>
+        </div>
+    </div>
+
+    <!-- Why connect with US End -->
+
+    <!-- Properties Start -->
+
+    <div class="text-center properties" style="background-color: #F9F9F9;">
+        <h1>Properties</h1>
+        <p class="mb-5">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+        <div class="image-filter">
+            <!-- Buttons to filter images -->
+            <div class="filter-buttons mb-5">
+                <button class="filter-btn active" data-category="all">All Properties</button>
+                <button class="filter-btn" data-category="villa">Villa</button>
+                <button class="filter-btn" data-category="apartment">Apartment</button>
+                <button class="filter-btn" data-category="office">Office</button>
+            </div>
+        
+            <!-- Image Gallery -->
+            <div class="image-gallery">
+                <div class="property-item">
+                    <div class="property-image-wrapper">
+                        <img src="/div.property-thumbnail-wrapper1.png" alt="Office" data-category="office" class="filter-image img-fluid">
+                        <div class="overlay-text">
+                            <h3>Luxury Family Home</h3>
+                            <span class="d-flex align-items-center gap-3"><i class="fa-solid fa-location-dot"></i> 1800-1818 79th St</span>
+                            <div class="d-flex align-items-center gap-2 justify-content-between w-100 flex-container">
+                                <div class="d-flex align-items-baseline gap-3">
+                                    <span class="d-flex gap-2"><i class="fa-solid fa-bed"></i> 4</span class="d-flex gap-2">
+                                    | 
+                                    <span><i class="fa-solid fa-bath"></i> 1</span> 
+                                    | 
+                                    <span class="d-flex gap-2"><i class="fa-regular fa-copy"></i> 400</span>
+                                </div>
+                                <span>$395,000</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="property-item">
+                    <div class="property-image-wrapper">
+                        <img src="/div.property-thumbnail-wrapper2.png" alt="Apartment 3" data-category="apartment" class="filter-image img-fluid">
+                        <div class="overlay-text">
+                            <h3>Skyper Pool Apartment</h3>
+                            <span class="d-flex align-items-center gap-3"><i class="fa-solid fa-location-dot"></i> 1020 Bloomingdale Ave</span>
+                            <div class="d-flex align-items-center gap-2 justify-content-between w-100 flex-container">
+                                <div class="d-flex align-items-baseline gap-3">
+                                    <span class="d-flex gap-2"><i class="fa-solid fa-bed"></i> 4</span class="d-flex gap-2">
+                                    | 
+                                    <span><i class="fa-solid fa-bath"></i> 2</span> 
+                                    | 
+                                    <span class="d-flex gap-2"><i class="fa-regular fa-copy"></i> 450</span>
+                                </div>
+                                <span>$280,000</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="property-item">
+                    <div class="property-image-wrapper">
+                        <img src="/div.property-thumbnail-wrapper3.png" alt="Villa 2" data-category="villa" class="filter-image img-fluid">
+                        <div class="overlay-text">
+                            <h3>North Dillard Street</h3>
+                            <span class="d-flex align-items-center gap-3"><i class="fa-solid fa-location-dot"></i>4330 Bell Shoals Rd</span>
+                            <div class="d-flex align-items-center gap-2 justify-content-between w-100 flex-container">
+                                <div class="d-flex align-items-baseline gap-3">
+                                    <span class="d-flex gap-2"><i class="fa-solid fa-bed"></i> 4</span class="d-flex gap-2">
+                                    | 
+                                    <span><i class="fa-solid fa-bath"></i> 2</span> 
+                                    | 
+                                    <span class="d-flex gap-2"><i class="fa-regular fa-copy"></i> 400</span>
+                                </div>
+                                <span>$250/month</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="property-item">
+                    <div class="property-image-wrapper">
+                        <img src="/div.property-thumbnail-wrapper4.png" alt="Villa 1" data-category="villa" class="filter-image img-fluid">
+                        <div class="overlay-text">
+                            <h3>Eaton Garth Penthouse</h3>
+                            <span class="d-flex align-items-center gap-3"><i class="fa-solid fa-location-dot"></i> 7722 18th Ave, Brooklyn</span>
+                            <div class="d-flex align-items-center gap-2 justify-content-between w-100 flex-container">
+                                <div class="d-flex align-items-baseline gap-3">
+                                    <span class="d-flex gap-2"><i class="fa-solid fa-bed"></i> 4</span class="d-flex gap-2">
+                                    | 
+                                    <span><i class="fa-solid fa-bath"></i> 2</span> 
+                                    | 
+                                    <span class="d-flex gap-2"><i class="fa-regular fa-copy"></i> 450</span>
+                                </div>
+                                <span>$180,000</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="property-item">
+                    <div class="property-image-wrapper">
+                        <img src="/div.property-thumbnail-wrapper5.png" alt="Apartment 2" data-category="apartment" class="filter-image img-fluid">
+                        <div class="overlay-text">
+                            <h3>New Apartment Nice Wiew</h3>
+                            <span class="d-flex align-items-center gap-3"><i class="fa-solid fa-location-dot"></i>42 Avenue O, Brooklyn</span>
+                            <div class="d-flex align-items-center gap-2 justify-content-between w-100 flex-container">
+                                <div class="d-flex align-items-baseline gap-3">
+                                    <span class="d-flex gap-2"><i class="fa-solid fa-bed"></i> 4</span class="d-flex gap-2">
+                                    | 
+                                    <span><i class="fa-solid fa-bath"></i> 1</span> 
+                                    | 
+                                    <span class="d-flex gap-2"><i class="fa-regular fa-copy"></i> 460</span>
+                                </div>
+                                <span>$850/month</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="property-item">
+                    <div class="property-image-wrapper">
+                        <img src="/div.property-thumbnail-wrapper6.png" alt="Apartment 1" data-category="apartment" class="filter-image img-fluid">
+                        <div class="overlay-text">
+                            <h3>Diamond Manor Apartment</h3>
+                            <span class="d-flex align-items-center gap-3"><i class="fa-solid fa-location-dot"></i>7802 20th Ave, Brooklyn</span>
+                            <div class="d-flex align-items-center gap-2 justify-content-between w-100 flex-container">
+                                <div class="d-flex align-items-baseline gap-3">
+                                    <span class="d-flex gap-2"><i class="fa-solid fa-bed"></i>4</span class="d-flex gap-2">
+                                    | 
+                                    <span><i class="fa-solid fa-bath"></i>2</span> 
+                                    | 
+                                    <span class="d-flex gap-2"><i class="fa-regular fa-copy"></i>500</span>
+                                </div>
+                                <span>$259,000</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <!-- Properties End -->
+
+    <!-- Contact US Start -->
+
+    <div class="contact-us">
+        <div class="text-center mb-5">
+            <img class="mb-2" src="/mail2.svg.png" alt="icon">
+            <h4 class="mb-2">Stay Up to Date</h4>
+            <p>Subscribe to our newsletter to receive our weekly feed.</p>
+        </div>
+        <div class="input-group mb-3 ">
+            <input type="text" class="form-control" placeholder="Your e-mail" aria-label="Recipient's username" aria-describedby="button-addon2" style="border: none;">
+            <button class="btn" type="button" id="button-addon2" style="border: none;">
+                Send <i class="fa-solid fa-right-long"></i>
+            </button>
+        </div>
+    </div>
+
+    <!-- Contact US End -->
+
+    <!-- Footer Start -->
+
+    <div class="d-flex align-items-center justify-content-around footer" style="background-color: #F9F9F9;">
+        <span>Copyright © 2024. JustHome</span>
+        <img class="img-fluid" src="/logo.svg fill.png" alt="footer logo">
+        <div class="socials">
+            <i class="fa-brands fa-facebook-f"></i>
+            <i class="fa-brands fa-x-twitter"></i>
+            <i class="fa-brands fa-instagram"></i>
+            <i class="fa-brands fa-linkedin-in"></i>
+        </div>
+    </div>
+
+    <!-- Footer End -->
+
+     
+
+    <script src="script.js"></script>
+
+    <!-- Bootstrap -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+
+    <!-- Font Awesome -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.1/js/all.min.js" integrity="sha512-1JkMy1LR9bTo3psH+H4SV5bO2dFylgOy+UJhMus1zF4VEFuZVu5lsi4I6iIndE4N9p01z1554ZDcvMSjMaqCBQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+</body>
+</html>

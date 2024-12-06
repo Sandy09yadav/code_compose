@@ -1,0 +1,303 @@
+* {
+    margin: 0;
+    padding: 0;
+    /* background-color: #FFF; */
+}
+
+.bg-meArea {
+    background-image: url('/div.property-item.png');
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+    height: 100vh;
+}
+
+/* Navbar CSS Start */
+
+.navbar {
+    padding: 2rem !important;
+}
+
+.navbar .logo {
+    width: 150px;
+}
+
+.nav-items ul {
+    display: flex;
+    align-items: center;
+    gap: 2rem;
+}
+
+.nav-items ul li {
+    color: #FFF;
+    list-style-type: none;
+    cursor: pointer;
+}
+
+.right-navItems {
+    gap: 1.5rem;
+    color: #FFF;
+}
+
+.right-navItems button {
+    color: #FFF;
+    background: transparent;
+    border: 1px solid #FFF;
+    border-radius: 20px;
+    padding: 5px 10px;
+}
+
+.hamburger {
+    display: none;
+    flex-direction: column;
+    cursor: pointer;
+}
+
+.hamburger .bar {
+    width: 25px;
+    height: 4px;
+    margin: 5px 0;
+    background-color: white;
+}
+
+/* Navbar CSS End */
+
+ /* Why connect with US CSS Start */
+
+ .Why-connect {
+    padding : 5rem 0;
+ }
+
+ .grid {
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+ }
+
+ .Why-connect .grid img {
+    min-height: 61px;
+    margin-bottom: 20px;
+ }
+
+ /* Why connect with US CSS End */
+
+ /* Properties CSS Start */
+
+ .properties {
+    padding : 5rem 0;
+ }
+
+ .image-gallery {
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    grid-row-gap: 2rem;
+    grid-column-gap: 2rem;
+    align-items: center;
+    padding: 20px;
+ } 
+
+ .image-gallery img {
+    margin: 0 auto;
+ }
+
+ .filter-btn {
+    color: #000;
+    background: transparent;
+    padding: 5px 10px;
+    border: none;
+ }
+
+ .filter-btn.active {
+    border: 1px solid #000;
+    border-radius: 20px;
+    background-color: #FFF8F6;
+ }
+ /* Overlay text CSS */
+
+ .property-item {
+    position: relative;
+    width: 100%;
+}
+
+.property-image-wrapper {
+    position: relative;
+}
+
+.filter-image {
+    width: 100%;
+    height: auto;
+}
+
+.overlay-text {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: end;
+    z-index: 10;
+    padding: 20px 30px;
+}
+
+.overlay-text h3,
+.overlay-text span,
+.overlay-text div,
+.overlay-text p {
+    margin: 5px 0;
+}
+
+.overlay-text i {
+    margin-right: 5px;
+}
+
+
+ /* Properties CSS End */
+
+ /* Contact US CSS Start  */
+
+ .contact-us {
+    padding : 5rem 0;
+ }
+
+ .input-group {
+    width: 35% !important;
+    border: 1px solid #000;
+    border-radius: 20px;
+    margin: 0 auto;
+    padding: 5px 10px;
+ }
+
+ .input-group input:focus {
+    box-shadow: none;
+ }
+
+ .input-group .btn:focus {
+    box-shadow: none;
+ }
+
+/* Contact US CSS End  */
+
+ /* Footer CSS Start */
+
+ .footer {
+    padding: 1.5rem;
+ }
+
+ .socials {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+ }
+
+ /* Footer CSS End */
+
+ /* Responsive CSS Start */
+
+ @media screen and (max-width: 992px) {
+
+    .nav-items, .navbar > .right-navItems {
+        display: none !important;
+    }
+    
+    /* Show the nav and right items when hamburger is clicked */
+    .nav-items.active {
+        display: flex !important;
+        flex-direction: column;
+        width: 100%;
+        text-align: center;
+        background-color: #F9F9F9;
+    }
+
+    .right-navItems.active {
+        display: flex !important;
+        flex-direction: row;
+        width: 100%;
+        text-align: center;
+        background-color: #F9F9F9;
+        padding-bottom: 1rem;
+        justify-content: center;
+    }
+
+    .right-navItems {
+        gap: 1.5rem;
+    }
+  
+    .nav-items.active {
+      display: flex;
+    }
+
+    .nav-items ul {
+        flex-direction: column;
+        gap: 0;
+    }
+  
+    .hamburger {
+      display: flex;
+    }
+  
+    .nav-items .nav-list li {
+      margin: 1rem 0;
+    }
+
+    .nav-items .nav-list li, .right-navItems div, .right-navItems button {
+        color: #000;
+        text-align: center;
+    }
+
+    .right-navItems {
+        flex-direction: column;
+        gap: 1rem;
+        color: #000;
+    }
+}
+
+@media screen and (max-width: 992px) {
+    .grid {
+        grid-template-columns: repeat(2,1fr);
+     }
+
+     .image-gallery {
+        grid-template-columns: repeat(2,1fr);
+     } 
+
+     .input-group {
+        width: 50% !important;
+     }
+}
+
+@media screen and (max-width: 768px) {
+    .grid {
+        grid-template-columns: repeat(1,1fr);
+    }
+
+    .image-gallery {
+        grid-template-columns: repeat(1,1fr);
+    } 
+
+    .footer {
+       flex-direction: column-reverse;
+       gap: 1.5rem;
+    }
+
+    .input-group {
+        width: 80% !important;
+     }
+}
+
+@media screen and (max-width: 992px) {
+
+    .right-navItems.active {
+        flex-direction: column;
+    }
+
+}
+@media screen and (max-width: 425px) {
+    .input-group {
+        width: 90% !important;
+    }
+}
+
+/* Responsive CSS End */
